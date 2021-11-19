@@ -22,7 +22,7 @@ View(newIris)
 m = kmeans(newIris,3)# 3 is the clusters you want to see
 m
 #plots
-hist(iris$Species,xlab='Species',col='blue')
+
 plot(iris[c("Sepal.Length","Sepal.Width")],col=m$cluster) ##kmeans model.
 plot(iris[c("Sepal.Length","Sepal.Width")],col=iris$Species)  ##original data
 boxplot(iris$Species,col = 'blue')
